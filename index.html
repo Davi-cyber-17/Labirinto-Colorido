@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Labirinto Colorido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section class="info">
+  <h1>LABIRINTO <span>COLORIDO</span></h1>
+  <p class="sub">Chegue até a bandeira 🏁. O que será que você está pintando?</p>
+  <div class="stats">
+    <span>FASE <b id="fase">1</b></span>
+    <span>PASSOS <b id="passos">0</b></span>
+    <span>PINTADO <b id="pintado">0%</b></span>
+  </div>
+  </section>
+  <section class="play">
+  <div class="board">
+    <canvas id="c"></canvas>
+    <div id="fim" class="hidden">
+      <div class="card">
+        <div id="emoji">🎉</div>
+        <h2 id="titulo"></h2>
+        <p id="texto"></p>
+        <button id="prox">PRÓXIMO ▶</button>
+      </div>
+    </div>
+  </div>
+  <div class="dpad">
+    <button data-d="0">▲</button>
+    <button data-d="3">◀</button>
+    <button data-d="2">▼</button>
+    <button data-d="1">▶</button>
+  </div>
+  <button id="novo" class="link">↻ novo labirinto</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
